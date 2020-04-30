@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<link rel="stylesheet" type="text/css" href="/immortal.css">
-	    <meta charset="utf-8">
-	    <title>Sign in</title>
+<head>
+	<link rel="stylesheet" type="text/css" href="immortal.css">
+	<meta charset="utf-8">
+	<title>Sign in</title>
+	<script type="text/javascript" src="immortal.js"></script>
 </head>
 
 <body/*bgcolor="#a9a9a9"*/>
@@ -24,22 +25,25 @@
           
     </nav>
     <div class="container">
-      <form action="#">
+      <form name="user" action="#">
           <div class="row">
               <h2 class="centered">Login</h2>
   
               <div class="loginInfo">
                   <input type="text" name="username" placeholder="Username" required>
                   <input type="password" name="password" placeholder="Password" required>
+			<p id="newCard"></p>
               </div>
               <div class="loginButton centered">
-                  <input type="submit" value="Login">
+                  <button type="submit" value="Login" onclick="checkLoginInput(document.user.password,document.user.username)">submit</button>
               </div>
   
           </div>
       </form>
   </div>
-  
+
+
+
   <div class="bottom-container">
       <p style="margin: 0px">
           <a href="#" class="otherlink link">Forgot password?</a>
@@ -48,5 +52,9 @@
           <a href="register.html" class="otherlink link">Sign up</a>
       </p>
   </div>
+
+
+
     </Body>
+
 </html>
