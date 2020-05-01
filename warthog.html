@@ -3,8 +3,8 @@
 
 <head>
     <title>Warthog For Sale</title>
-    <link rel="stylesheet" type="text/css" href="immortal.css">
-    <script src="immortal.js"></script>
+    <link rel="stylesheet" type="text/css" href="/productpages.css">
+    <script src="/immortal.js"></script>
 </head>
 
 <body>
@@ -17,8 +17,10 @@
     <a href="/hotdeal.html">Hot Deal</a> |
     <a href="/about.html">About Us</a> |
     <a href="/contact.html">Contact Us</a> |
-    <a href="/signin.html"link">Sign in</a>  |
-    <input type="search" placeholder="Search.."> |
+    <a href="/products.html">Products</a> |
+    <a href="/signin.html">Sign in</a> |
+    <a href="/register.html">Register</a> |
+    <input type="search" placeholder="Search..">
 </nav>
 
 <div class="productContainer">
@@ -54,11 +56,9 @@
                 </div>
             </div>
 
-            <h2>Safety</h2>
+            <h2>Exterior</h2>
             <ul>
-                <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</li>
-                <li>Sed do eiusmod tempor incididunt</li>
-                <li>Ut labore et dolore magna aliqua</li>
+                <li>Alloy Wheels</li>
             </ul>
         </div>
         <div class="contactColumn">
@@ -72,7 +72,7 @@
                     <input type="text" name="phone" placeholder="Phone (optional)">
                 </div>
                 <div class="checkButton">
-                    <input type="check" value="Check Availability">
+                    <input type="check" value="Check Availability" onclick="ValidateEmail(document.productContact.email)"/>
                 </div>
             </form>
             <hr style="width: 80%">
