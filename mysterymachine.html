@@ -3,8 +3,8 @@
 
 <head>
     <title>Mystery Machine For Sale</title>
-    <link rel="stylesheet" type="text/css" href="immortal.css">
-    <script src="immortal.js"></script>
+    <link rel="stylesheet" type="text/css" href="/productpages.css">
+    <script src="/immortal.js"></script>
 </head>
 
 <body>
@@ -55,14 +55,14 @@
 
             <h2>Safety</h2>
             <ul>
-                <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</li>
-                <li>Sed do eiusmod tempor incididunt</li>
-                <li>Ut labore et dolore magna aliqua</li>
+                <li>Backup Camera</li>
+                <li>Brake Assist</li>
+                <li>Stability Control</li>
             </ul>
         </div>
         <div class="contactColumn">
             <h1 style="margin-top: 5px" class="centered">Contact Seller</h1>
-            <form action="#">
+            <form name="productContact" action="#">
                 <div class="contactInfo centered">
                     <input type="text" name="fname" placeholder="First Name" required>
                     <input type="text" name="lname" placeholder="Last Name" required>
@@ -71,7 +71,7 @@
                     <input type="text" name="phone" placeholder="Phone (optional)">
                 </div>
                 <div class="checkButton">
-                    <input type="check" value="Check Availability">
+                    <input type="check" value="Check Availability" onclick="ValidateEmail(document.productContact.email)"/>
                 </div>
             </form>
             <hr style="width: 80%">
